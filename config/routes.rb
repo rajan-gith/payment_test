@@ -6,4 +6,9 @@ Rails.application.routes.draw do
   post "/card" => "billing#create_card", as: :create_payment_method
   get '/success' => 'billing#success', as: :success
   post '/subscription' => 'billing#subscribe', as: :subscribe
+
+
+
+  get 'charges/new', to: 'charges#new'
+  post 'charges', to: 'charges#create', as: 'create_charges'
 end
