@@ -1,0 +1,5 @@
+Welcome user <%= current_user.email %>
+<br>
+wallet balance <%= current_user.wallet_amount %>
+<br>
+<%= link_to "add app money to wallet", new_wallet_amount_path  %>

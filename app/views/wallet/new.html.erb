@@ -1,0 +1,10 @@
+hi this is your page to add wallet balance
+<br>
+<%= form_for current_user, url: add_wallet_amount_path, html: {id: 'add-wallet-money-method'} do |f| %>
+<br>
+  <%= f.label :wallet_amount %>
+<br>
+  <%= f.number_field :wallet_amount %>
+<br>
+<% end %>
+<%= link_to 'submit', add_card_path, remote: true  %>
