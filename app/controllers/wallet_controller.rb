@@ -20,6 +20,7 @@ class WalletController < ApplicationController
 
   def catch_exception(exception)
     flash[:error] = exception.message
+    redirect_to root_path
   end
 
 end
