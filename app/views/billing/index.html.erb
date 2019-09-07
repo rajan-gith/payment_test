@@ -9,7 +9,7 @@
       Are you ready to pay?
     </h1>
   </div>
-  <%= form_tag create_payment_method_path, id: "billing-create-payment-method" do  %>
+  <%= form_tag create_payment_method_path, id: "add_payment_method_path" do  %>
     <%= link_to "Let's go", add_payment_method_path, remote: true, class: "btn btn-primary" %>
   <% end %>
 </div>

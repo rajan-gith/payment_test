@@ -9,7 +9,7 @@ var handler = StripeCheckout.configure({
     panelLabel: "Add payment method",
     allowRememberMe: false,
     token: function (token) {
-        var form = document.getElementById('billing-create-payment-method');
+        var form = document.getElementById('add_payment_method_path');
         //we will create element with this id in the next step
         var hiddenInput = document.createElement('input');
         hiddenInput.setAttribute('type', 'hidden');
