@@ -8,3 +8,11 @@ hi this is your page to add wallet balance
 <br>
 <% end %>
 <%= link_to 'submit', add_card_path, remote: true  %>
+<script type="text/javascript">
+  $('form input').keydown(function (e) {
+    if (e.keyCode == 13) {
+        e.preventDefault();
+        return false;
+    }
+  });
+</script>
